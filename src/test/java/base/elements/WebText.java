@@ -25,7 +25,6 @@ import java.util.List;
 public class WebText extends BaseElement implements ITextBox {
 
     private static final Logger log = LogManager.getLogger(WebText.class);
-
     private static final ElementType elementType = ElementType.TEXTBOX;
 
     public WebText(By by, String name) {
