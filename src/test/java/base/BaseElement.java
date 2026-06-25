@@ -2,19 +2,11 @@ package base;
 
 import aquality.selenium.browser.AqualityServices;
 import aquality.selenium.core.elements.ElementState;
-import aquality.selenium.core.elements.ElementsCount;
-import aquality.selenium.core.elements.interfaces.IElementStateProvider;
-import aquality.selenium.core.elements.interfaces.IElementSupplier;
-import aquality.selenium.core.visualization.IVisualStateProvider;
 import aquality.selenium.elements.ElementType;
 import aquality.selenium.elements.HighlightState;
-import aquality.selenium.elements.actions.JsActions;
 import aquality.selenium.elements.actions.MouseActions;
 import aquality.selenium.elements.interfaces.IElement;
 import org.openqa.selenium.*;
-import org.openqa.selenium.remote.RemoteWebElement;
-
-import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeoutException;
 

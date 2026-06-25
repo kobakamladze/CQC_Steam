@@ -2,11 +2,7 @@ package base;
 
 import aquality.selenium.browser.AqualityServices;
 import aquality.selenium.core.waitings.IConditionalWait;
-import java.time.Duration;
-import java.util.function.BooleanSupplier;
-
 import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

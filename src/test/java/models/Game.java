@@ -1,7 +1,6 @@
 package models;
 
 import utils.CustomParser;
-
 import java.util.Objects;
 
 public class Game implements Comparable<Game> {
