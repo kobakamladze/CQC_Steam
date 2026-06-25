@@ -15,6 +15,8 @@ import java.util.Map;
 
 public class GetGameWithTheHighestDiscountTest extends BaseTest {
 
+    private static final String FILE_NAME = "steam.";
+
     private static final WelcomeSteps welcomeSteps = new WelcomeSteps();
     private static final CategoryPreviewPage categoryPreviewPage = new CategoryPreviewPage();
     private static final GamesListSteps gamesListSteps = new GamesListSteps();
@@ -42,7 +44,7 @@ public class GetGameWithTheHighestDiscountTest extends BaseTest {
     public void downloadTest() {
         welcomeSteps.assertThatScreenIsOpened();
         welcomeSteps.downloadSteam();
-        Assert.assertTrue(WaitHelper.waitForFileDownloaded("steam."),
+        Assert.assertTrue(WaitHelper.waitForFileDownloaded(FILE_NAME),
                 "Steam file should be downloaded");
     }
 }
