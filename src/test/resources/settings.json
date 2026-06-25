@@ -1,0 +1,57 @@
+{
+  "browserName": "chrome",
+  "isRemote": false,
+  "isElementHighlightEnabled": true,
+  "driverSettings": {
+    "chrome": {
+      "capabilities": {
+        "unhandledPromptBehavior": "ignore"
+      },
+      "options": {
+        "intl.accept_languages": "ru",
+        "safebrowsing.enabled": "true",
+        "download.prompt_for_download": "false",
+        "download.default_directory": "./downloads"
+      },
+      "startArguments": [
+        "--start-maximized",
+        "--disable-popup-blocking",
+        "--disable-notifications"
+      ],
+      "pageLoadStrategy": "normal"
+    },
+    "firefox": {
+      "capabilities": {
+        "unhandledPromptBehavior": "ignore"
+      },
+      "options": {
+        "intl.accept_languages": "ru",
+        "safebrowsing.enabled": "true",
+        "browser.download.folderList": 2,
+        "browser.download.manager.showWhenStarting": false,
+        "download.prompt_for_download": "false",
+        "browser.download.dir": "./downloads"
+      },
+      "pageLoadStrategy": "normal"
+    }
+  },
+  "timeouts": {
+    "timeoutImplicit" : 5,
+    "timeoutCondition" : 20,
+    "timeoutScript" : 10,
+    "timeoutPageLoad" : 30,
+    "timeoutPollingInterval": 300,
+    "timeoutCommand":120
+  },
+  "retry": {
+    "number": 2,
+    "pollingInterval": 300
+  },
+  "logger": {
+    "language": "en",
+    "logPageSource": true
+  },
+  "elementCache": {
+    "isEnabled": false
+  }
+}
