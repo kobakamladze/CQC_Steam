@@ -1,5 +1,5 @@
 {
-  "browserName": "chrome",
+  "browserName": "firefox",
   "isRemote": false,
   "isElementHighlightEnabled": true,
   "driverSettings": {
@@ -30,14 +30,14 @@
         "browser.download.folderList": 2,
         "browser.download.manager.showWhenStarting": false,
         "download.prompt_for_download": "false",
-        "download.default_directory": "./downloads"
+        "browser.download.dir": "./downloads"
       },
       "pageLoadStrategy": "normal"
     }
   },
   "timeouts": {
     "timeoutImplicit" : 5,
-    "timeoutCondition" : 15,
+    "timeoutCondition" : 20,
     "timeoutScript" : 10,
     "timeoutPageLoad" : 30,
     "timeoutPollingInterval": 300,

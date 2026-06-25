@@ -44,7 +44,6 @@ public class GetGameWithTheHighestDiscountTest extends BaseTest {
     public void downloadTest() {
         welcomeSteps.assertThatScreenIsOpened();
         welcomeSteps.downloadSteam();
-        Assert.assertTrue(WaitHelper.waitForFileDownloaded(FILE_NAME),
-                "Steam file should be downloaded");
+        Assert.assertTrue(WaitHelper.waitForFileDownloaded(FILE_NAME), "Steam file should be downloaded");
     }
 }
